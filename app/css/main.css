@@ -1,0 +1,36 @@
+
+#uptotop{
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #383737;
+  color: white;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 1.8;
+  box-shadow: 0 0 4px black;
+  z-index: 9999;
+}
+
+.chat-frame{
+  width: 100%;
+min-height: 600px;
+}
+
+
+
+.ast-advanced-headers .main-header-menu > li.current-menu-item > a, .ast-advanced-headers .main-header-menu >li.current-menu-ancestor > a, .ast-advanced-headers .main-header-menu > li.current_page_item > a {
+    color: #796854!important;
+}
+
+.ast-advanced-headers .main-header-menu, .ast-advanced-headers .main-header-menu > li > a, .ast-advanced-headers .ast-masthead-custom-menu-items, .ast-advanced-headers .ast-masthead-custom-menu-items a {
+    color: #796854!important;
+}
+
+.ast-advanced-headers .main-header-menu > li.current-menu-item > a, .ast-advanced-headers .main-header-menu >li.current-menu-ancestor > a, .ast-advanced-headers .main-header-menu > li.current_page_item > a:hover {
+    color: #796854!important;
+}

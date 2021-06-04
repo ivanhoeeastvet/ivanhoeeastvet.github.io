@@ -1,22 +1,35 @@
+import { config } from './config.mjs';
+import { utils } from './utils.mjs';
 
 const app = {
     init(){
-      console.log('hello world!')
+
+      utils.uptotop()
+
     },
     messenger(){
 
-      window.Tawk_API = Tawk_API || {},
-      Tawk_LoadStart=new Date();
+      if(config.tawk.enabled){
 
-      var s1=document.createElement("script");
+        if(typeof Tawk_API === 'undefined'){
+          window.Tawk_API = {};
+        }
 
-      s1.async=true;
-      s1.src='https://embed.tawk.to/60b9df3c6699c7280daaa98f/1f7b1024k';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      document.body.append(s1)
+        let Tawk_LoadStart = new Date();
+
+        let s1=document.createElement("script");
+
+        s1.async = true;
+        s1.src = (config.tawk.basePath + config.tawk.api);
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin','*');
+        document.body.append(s1);
+
+      }
+
+      return this;
 
     }
 }
 
-app.init();
+app.messenger().init();
