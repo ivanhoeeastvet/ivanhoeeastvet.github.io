@@ -1,32 +1,45 @@
 import { config } from './config.mjs';
 import { utils } from './utils.mjs';
+import { router } from './router.mjs';
 
 const app = {
     init(){
 
-      utils.uptotop()
+      utils.uptotop();
+
+      router.rout(location.pathname)
 
     },
     messenger(){
 
-      if(config.tawk.enabled){
+      window.onload = function(){
+        if(config.tawk.enabled){
 
-        if(typeof Tawk_API === 'undefined'){
-          window.Tawk_API = {};
+          if(typeof Tawk_API === 'undefined'){
+            window.Tawk_API = {};
+          }
+
+          let Tawk_LoadStart = new Date();
+
+          let s1=document.createElement("script");
+
+          s1.async = true;
+          s1.src = (config.tawk.basePath + config.tawk.api);
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin','*');
+          document.body.append(s1);
         }
 
-        let Tawk_LoadStart = new Date();
+        if(config.fb.enabled){
+          let js = document.createElement("script");
+          js.id = 'facebook-jssdk';
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=292761771596497&autoLogAppEvents=1';
+          document.body.append(js);
 
-        let s1=document.createElement("script");
 
-        s1.async = true;
-        s1.src = (config.tawk.basePath + config.tawk.api);
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin','*');
-        document.body.append(s1);
-
+        }
       }
-
+      
       return this;
 
     }
