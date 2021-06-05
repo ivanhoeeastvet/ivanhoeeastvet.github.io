@@ -4,8 +4,8 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #383737;
-  color: white;
+  background: #ffffff;
+      color: #796854;
   text-align: center;
   height: 50px;
   width: 50px;
@@ -14,6 +14,7 @@
   line-height: 1.8;
   box-shadow: 0 0 4px black;
   z-index: 9999;
+  cursor: pointer;
 }
 
 .chat-frame{
@@ -33,4 +34,13 @@ min-height: 600px;
 
 .ast-advanced-headers .main-header-menu > li.current-menu-item > a, .ast-advanced-headers .main-header-menu >li.current-menu-ancestor > a, .ast-advanced-headers .main-header-menu > li.current_page_item > a:hover {
     color: #796854!important;
+}
+
+
+.fl-node-5c3990641a891{
+    padding-top: 50px;
+}
+
+.fl-node-5c3990641ab79, .fl-node-5c3990641abb8{
+  padding-left: 20px;
 }
