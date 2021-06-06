@@ -47,8 +47,5 @@ const app = {
     }
 }
 
-console.log(
-  utils.isEmail('test@test.com')
-)
 
 app.messenger().init();

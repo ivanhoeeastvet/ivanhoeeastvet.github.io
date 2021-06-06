@@ -2,6 +2,14 @@
   padding: 10px
 }
 
+#smap{
+    list-style: none;
+}
+
+
+#smap li a{
+      color: blue;
+}
 #uptotop{
   display: none;
   position: fixed;
