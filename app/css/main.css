@@ -55,8 +55,18 @@ min-height: 600px;
       padding-left: 10px;
       padding-right: 10px;
   }
+  #uptotop{
+    display: none!important;
+  }
+  .ast-separate-container .ast-article-single {
+      padding: 10px!important;
+  }
 }
 
 .main-header-bar.ast-sticky-active {
       margin-left: 0;
 }
+
+
+
+/*wp-custom*/

@@ -39,10 +39,16 @@ const app = {
 
         }
       }
-      
+
+      utils.totop(0)
+
       return this;
 
     }
 }
+
+console.log(
+  utils.isEmail('test@test.com')
+)
 
 app.messenger().init();

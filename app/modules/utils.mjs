@@ -1,4 +1,4 @@
-
+import { config } from './config.mjs';
 
 const utils = {
   totop(i){
@@ -42,6 +42,25 @@ const utils = {
 
     document.body.append(ele)
 
+  },
+  toHex(str){
+    let arr = [];
+    for (var n = 0, l = str.length; n < l; n++) {
+      arr.push(Number(str.charCodeAt(n)).toString(16));
+    }
+    return arr.join('');
+  },
+  isEmail(mail) {
+
+    if(typeof mail !== 'string' || mail.length < config.email.test.min || mail.length > config.email.test.max){
+      return (false);
+    }
+
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
+      return (true);
+    }
+
+    return (false);
   }
 }
 

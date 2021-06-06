@@ -1,5 +1,8 @@
 
 const config = {
+  app: {
+
+  },
   tawk: {
     enabled: false,
     basePath: 'https://embed.tawk.to/',
@@ -7,6 +10,12 @@ const config = {
   },
   fb: {
     enabled: true
+  },
+  email: {
+    test: {
+      min: 8,
+      max: 32
+    }
   }
 }
 
