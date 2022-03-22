@@ -24,13 +24,18 @@ const app = {
 
             }
 
+            if(location.pathname === '/services.html'){
+              document.getElementById('menu-item-480').remove();
+
+            }
+
 
           }
         }
       }
 
 
-
+      document.getElementById('yearnow').textContent = utils.getYear();
 
       window.onload = function(){
 

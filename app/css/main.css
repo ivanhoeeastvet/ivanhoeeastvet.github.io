@@ -80,4 +80,11 @@ min-height: 600px;
 
 
 
-/*wp-custom*/
+.main-header-bar-wrap{
+	background: rgba(255, 255, 255, 0.53);
+}
+
+
+.ast-sticky-main-shrink.ast-header-break-point .ast-sticky-shrunk .site-branding {
+    margin-top: 1rem;
+}

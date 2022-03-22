@@ -61,6 +61,9 @@ const utils = {
     }
 
     return (false);
+  },
+  getYear(){
+    return JSON.stringify(new Date(Date.now()).getFullYear());
   }
 }
 
