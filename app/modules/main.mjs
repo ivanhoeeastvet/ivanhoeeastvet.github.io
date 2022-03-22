@@ -12,7 +12,20 @@ const app = {
     },
     messenger(){
 
+      let li;
+
+      for (let i = 0; i < config.menu.length; i++) {
+        if(!config.menu[i].active){
+          li = document.getElementById(config.menu[i].id);
+          li.remove();
+        }
+      }
+      
       window.onload = function(){
+
+
+
+
         if(config.tawk.enabled){
 
           if(typeof Tawk_API === 'undefined'){

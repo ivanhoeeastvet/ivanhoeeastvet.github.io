@@ -16,7 +16,12 @@ const config = {
       min: 8,
       max: 32
     }
-  }
+  },
+  menu: [{
+    id: 'menu-item-970',
+    name: 'Cat Boarding',
+    active: false
+  }]
 }
 
 export { config }
