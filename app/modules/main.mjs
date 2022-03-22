@@ -12,15 +12,26 @@ const app = {
     },
     messenger(){
 
-      let li;
 
       for (let i = 0; i < config.menu.length; i++) {
         if(!config.menu[i].active){
-          li = document.getElementById(config.menu[i].id);
-          li.remove();
+          document.getElementById(config.menu[i].id).remove();
+
+          if(config.menu[i].id === 'menu-item-970'){
+
+            if(location.pathname === '/' || location.pathname === '/index.html'){
+              document.getElementsByClassName('fl-node-5df05eb61775c')[0].remove();
+
+            }
+
+
+          }
         }
       }
-      
+
+
+
+
       window.onload = function(){
 
 
