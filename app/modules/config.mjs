@@ -19,6 +19,7 @@ const config = {
   },
   menu: [{
     id: 'menu-item-970',
+    sub: 'menu-item-480',
     name: 'Cat Boarding',
     active: false
   }]

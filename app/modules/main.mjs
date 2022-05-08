@@ -15,7 +15,13 @@ const app = {
 
       for (let i = 0; i < config.menu.length; i++) {
         if(!config.menu[i].active){
-          document.getElementById(config.menu[i].id).remove();
+
+          try {
+            document.getElementById(config.menu[i].id).remove();
+          } catch (err) {
+
+          }
+
 
           if(config.menu[i].id === 'menu-item-970'){
 
@@ -25,7 +31,12 @@ const app = {
             }
 
             if(location.pathname === '/services.html'){
-              document.getElementById('menu-item-480').remove();
+              try {
+                document.getElementById('menu-item-480').remove();
+              } catch (err) {
+
+              }
+
 
             }
 

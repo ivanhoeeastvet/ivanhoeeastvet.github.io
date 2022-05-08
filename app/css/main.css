@@ -89,3 +89,10 @@ min-height: 600px;
 .ast-sticky-main-shrink.ast-header-break-point .ast-sticky-shrunk .site-branding {
     margin-top: 1rem;
 }
+
+
+.fl-node-601a1bec997ae > .fl-col-content,
+.fl-node-5e1ed4768e782 > .fl-col-content,
+.fl-node-5f472e2ee88f3 > .fl-col-content {
+  min-height: 300px;
+}
