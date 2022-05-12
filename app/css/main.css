@@ -93,6 +93,9 @@ min-height: 600px;
 
 .fl-node-601a1bec997ae > .fl-col-content,
 .fl-node-5e1ed4768e782 > .fl-col-content,
-.fl-node-5f472e2ee88f3 > .fl-col-content {
-  min-height: 300px;
+.fl-node-5f472e2ee88f3 > .fl-col-content,
+
+.fl-node-5f472d09f0c1a > .fl-col-content,
+.fl-node-5df06f444c954 > .fl-col-content {
+  min-height: 400px;
 }
