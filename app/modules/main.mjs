@@ -2,6 +2,10 @@ import { config } from './config.mjs';
 import { utils } from './utils.mjs';
 import { router } from './router.mjs';
 
+if(location.pathname === '/boarding.html'){
+  location.href = location.origin;
+}
+
 const app = {
     init(){
 
